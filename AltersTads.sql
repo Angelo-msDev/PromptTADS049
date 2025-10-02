@@ -22,8 +22,6 @@ alter table clientes add column bairro varchar (50) not null;
 
 -- Alterações na tabela Departamentos
 
-alter table departamentos
-
 alter table departamentos change column Descricao_Ativ `status` enum ("Ativado", "Desativado") not null;
 
 alter table departamentos add column relatorio_mes varchar(100);
