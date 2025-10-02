@@ -25,3 +25,12 @@ alter table clientes add column bairro varchar (50) not null;
 alter table departamentos change column Descricao_Ativ `status` enum ("Ativado", "Desativado") not null;
 
 alter table departamentos add column relatorio_mes varchar(100);
+
+-- Alteração da tabela Pedidos
+alter table pedidos change column Status status enum("pedido efetuado", "pagamento confirmado", "pedido separado", "saiu para entrega", "entregue");
+
+-- Alteração da tabela livros 
+alter table livros drop column Genero;
+
+-- Alteração da tabela Identificadores 
+alter table Identificadores add column genero varchar(20);
