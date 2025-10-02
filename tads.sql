@@ -1,4 +1,4 @@
-create database Editora;
+create database if not exists Editora;
 use Editora;
 
 CREATE TABLE if not exists Autores (
